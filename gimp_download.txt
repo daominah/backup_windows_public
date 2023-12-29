@@ -1,0 +1,6 @@
+https://www.gimp.org/downloads/
+https://gitlab.gnome.org/GNOME/gimp
+https://github.com/GNOME/gimp
+
+# 2023-11-05
+https://download.gimp.org/gimp/v2.10/windows/gimp-2.10.36-setup.exe

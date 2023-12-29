@@ -1,0 +1,6 @@
+https://www.google.com/drive/download/
+https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe
+
+# When setup, skip welcome prompts, you should only set "Mirror files"
+
+# Google Drive for desktop v85.0.26.0 2023-12

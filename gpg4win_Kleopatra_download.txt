@@ -1,0 +1,6 @@
+https://gpg4win.org/download.html
+
+Kleopatra is a certificate manager, can sign and encrypt files.
+
+# Gpg4win v4.2.0 2023-07-14
+https://files.gpg4win.org/gpg4win-4.2.0.exe

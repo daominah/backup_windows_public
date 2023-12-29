@@ -1,0 +1,11 @@
+https://go.dev/doc/install
+
+# go1.21.5 2023-12-05
+https://go.dev/dl/go1.21.5.windows-amd64.msi
+
+
+https://www.jetbrains.com/go/download/other.html
+https://gitlab.com/tung.daothanhtung/pirate_jetbra_libin9ioak#private_repository
+
+#  GoLand 2023-11-15
+https://download.jetbrains.com/go/goland-2023.2.5.exe

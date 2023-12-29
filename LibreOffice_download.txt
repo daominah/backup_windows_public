@@ -1,0 +1,5 @@
+https://www.libreoffice.org/download/download-libreoffice/
+https://github.com/LibreOffice/core
+
+# 2023-12-11
+https://www.libreoffice.org/donate/dl/win-x86_64/7.5.9/en-US/LibreOffice_7.5.9_Win_x86-64.msi

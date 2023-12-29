@@ -1,0 +1,12 @@
+.idea
+
+desktop.ini
+
+*.exe
+*.msi
+*.zip
+
+!CALD3_installer_d201411.zip
+!canon_ts200_driver_online_setup.exe
+!diskinternals_linux_reader_v3.4_d202001.exe
+!visual_studio_2019_package.zip

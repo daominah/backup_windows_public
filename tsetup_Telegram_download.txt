@@ -1,0 +1,6 @@
+https://github.com/telegramdesktop/tdesktop/releases
+https://desktop.telegram.org/
+
+# Telegram Desktop v4.8.3 2023-06-02,
+# newer versions introduce annoying story feature, so you do not want to update
+https://github.com/telegramdesktop/tdesktop/releases/tag/v4.8.3

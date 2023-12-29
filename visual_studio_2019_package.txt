@@ -1,0 +1,13 @@
+For C# (C Sharp) related projects
+
+# Visual Studio 2019 community edition
+https://my.visualstudio.com/Downloads?q=Visual%20Studio%20Community%202019
+
+# JetBrains dotPeek is a free-of-charge standalone tool,
+# it can reliably decompile any .NET assembly into equivalent C# code.
+https://www.jetbrains.com/decompiler/download/
+
+# VSIX is a Visual Studio extension installer (https://marketplace.visualstudio.com/),
+# you should be able to install it by double-clicking the .vsix file after Visual Studio installed.
+EditorGuidelines.vsix
+NET_Portability_Analyzer_v2.7.0.vsix

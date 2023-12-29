@@ -1,0 +1,5 @@
+https://github.com/syncthing/syncthing/releases
+https://github.com/syncthing/syncthing/blob/main/README-Docker.md
+
+# 2023-12-11
+https://github.com/syncthing/syncthing/releases/download/v1.27.1/syncthing-windows-amd64-v1.27.1.zip

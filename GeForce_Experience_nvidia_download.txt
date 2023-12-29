@@ -1,0 +1,8 @@
+https://www.nvidia.com/en-us/geforce/geforce-experience/download/
+# GeForce Experience can manage to download and update NVIDIA graphic driver
+
+# GeForce Experience v3.27.0.120 2023-11-06
+https://us.download.nvidia.com/GFE/GFEClient/3.27.0.120/GeForce_Experience_v3.27.0.120.exe
+
+# NVIDIA Graphics Driver v536.33 2023-12-12
+https://www.nvidia.com/Download/index.aspx?lang=en-us

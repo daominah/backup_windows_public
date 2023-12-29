@@ -1,0 +1,4 @@
+https://github.com/Perfare/AssetStudio/releases
+
+# 2022-06-16
+https://github.com/Perfare/AssetStudio/releases/download/v0.16.47/AssetStudio.net472.v0.16.47.zip
