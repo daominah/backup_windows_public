@@ -1,0 +1,9 @@
+https://www.teamviewer.com/en/download/windows/
+
+# Windows TeamViewer full client
+https://download.teamviewer.com/download/TeamViewer_Setup_x64.exe
+
+# Linux
+https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+
+# 2023-05-08 v15.53.7

@@ -1,0 +1,10 @@
+https://go.dev/doc/install
+
+# Go 2024-06-04
+https://go.dev/dl/go1.22.4.windows-amd64.msi
+
+https://gitlab.com/tung.daothanhtung/pirate_jetbra_libin9ioak#private_repository
+
+# GoLand 2024-06-10
+https://www.jetbrains.com/go/download/other.html
+https://download.jetbrains.com/go/goland-2023.2.7.exe

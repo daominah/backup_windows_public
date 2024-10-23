@@ -1,0 +1,6 @@
+https://meldmerge.org/
+https://gitlab.gnome.org/GNOME/meld/-/releases
+https://meld.app/
+
+# 2024-03
+https://download.gnome.org/binaries/win32/meld/3.22/Meld-3.22.2-mingw.msi

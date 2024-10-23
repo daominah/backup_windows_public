@@ -1,0 +1,3 @@
+https://www.blender.org/download/lts/3-6/
+
+https://github.com/UNOWEN-OwO/md_spine_tools

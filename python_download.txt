@@ -1,0 +1,7 @@
+https://www.python.org/downloads/
+
+# Use the newest version, if got a problem, try the v3.7.
+
+# Python v3.7.9 2020-08-17 is the final bugfix/security release with
+# binary installers for the legacy 3.7 series
+https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe

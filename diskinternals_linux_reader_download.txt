@@ -1,0 +1,4 @@
+https://www.diskinternals.com/linux-reader/
+https://eu.diskinternals.com/download/Linux_Reader.exe
+
+Newer versions than v3.4 have annoying prompt "Upgrade to PRO".

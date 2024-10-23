@@ -1,0 +1,5 @@
+https://openvpn.net/community-downloads/
+https://github.com/OpenVPN/openvpn-gui/tags
+
+# 2023-11-17
+https://swupdate.openvpn.org/community/releases/OpenVPN-2.6.8-I001-amd64.msi

@@ -1,0 +1,4 @@
+https://obsproject.com/download
+
+# OBS Studio v30.0.2 2023-12-11
+https://cdn-fastly.obsproject.com/downloads/OBS-Studio-30.0.2-Full-Installer-x64.exe

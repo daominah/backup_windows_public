@@ -1,0 +1,6 @@
+https://slack.com/downloads/windows
+
+https://slack.com/release-notes/windows
+
+# 2023-12-21
+https://downloads.slack-edge.com/releases/windows/4.36.136/prod/x64/SlackSetup.exe

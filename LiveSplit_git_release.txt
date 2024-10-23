@@ -1,0 +1,6 @@
+https://github.com/LiveSplit/LiveSplit/releases
+
+# 2023-06-17
+https://github.com/LiveSplit/LiveSplit/releases/download/1.8.26/LiveSplit_1.8.26.zip
+
+# some games config in GoogleDrive\game\speedrun_setting

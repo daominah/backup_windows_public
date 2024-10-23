@@ -1,0 +1,10 @@
+https://github.com/pbatard/rufus/releases/
+# I save to `D:\boot_usb_Rufus\rufus_bin`
+
+# Rufus v4.3 portable 2023-10-19
+https://github.com/pbatard/rufus/releases/download/v4.3/rufus-4.3p.exe
+
+# If created USB does not boot, try to format it as DD mode instead of ISO mode.
+
+# Get Operating System ISO image from:
+https://linuxmint.com/download.php

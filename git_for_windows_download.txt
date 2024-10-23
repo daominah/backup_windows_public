@@ -1,0 +1,21 @@
+https://git-scm.com/download/win
+
+# 2023-11-20
+https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/Git-2.43.0-64-bit.exe
+
+
+# GitHub blocks files larger than 100 MiB, to track files beyond this limit,
+# you must use Git Large File Storage (Git LFS). Example commands:
+
+
+git lfs install
+
+git lfs track --filename CALD3_installer_d201411.zip  # this creates file ".gitattributes"
+
+
+# Document:
+https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#file-size-limits
+https://git-lfs.com/
+
+# 2023-12-13
+https://github.com/git-lfs/git-lfs/releases/tag/v3.4.1
