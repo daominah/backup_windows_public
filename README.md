@@ -52,7 +52,8 @@ Windows crap effects significantly slow down the computer. For example:
 So you should disable visual effects:
 
 * Start Menu: View advanced system settings: Performance: Settings:
-  Adjust for best performance (all visual effects are unchecked)
+  Adjust for best performance (all visual effects are unchecked):
+  check `Smooth edges of screen fonts`: Apply.
 * Start Menu: Themes: Color: unchecked `Transparency effects`
 
 Windows sometimes screw up the settings when updating.
