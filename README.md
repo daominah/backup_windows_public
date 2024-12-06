@@ -11,6 +11,12 @@ do NOT put sensitive information here.
 Be aware of Google Drive does not have ".gitignore" equivalent feature and
 GitHub blocks files larger than 100 MiB (need [Git Large File Storage](git_for_windows_download.txt)).
 
+Git and Google Drive do not work well together.
+Git can have pull error, but push is fine, can ignore the error.
+
+The full list of files in this dir is [ls_this_dir.txt](ls_this_dir.txt),
+was created by `ls -lh --time-style=+%Y-%m-%d > ls_this_dir.txt`
+
 ### Create boot USB
 
 Use Microsoft Windows 10 Installation Media Creation Tool:

@@ -1,9 +1,0 @@
-https://store.steampowered.com/about/
-
-# Should change settings:
-# Interface: Start Up Location: Store to Library.
-# Interface: Notify me about ... upcoming releases to OFF.
-# Download: SHADER PRE-CACHING: Allow background processing of Vulkan shaders to ON.
-# Storage: Add Drive: WindowsData(E:)\game\SteamLibrary
-
-# You can try `steam -vgui` command to run Steam with old UI if you have a problem.

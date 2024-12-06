@@ -1,5 +1,19 @@
-https://www.mozilla.org/en-US/firefox/all/#product-desktop-release
+## Download Firefox
+
 https://download-installer.cdn.mozilla.net/pub/firefox/releases/
 
-# Firefox v121.0 2023-12-19
-https://download-installer.cdn.mozilla.net/pub/firefox/releases/121.0/win64/en-US/Firefox%20Setup%20121.0.exe
+https://www.mozilla.org/en-US/firefox/all/#product-desktop-release
+
+
+Firefox 133.0 2024-11:
+
+https://download-installer.cdn.mozilla.net/pub/firefox/releases/133.0/win64/en-US/Firefox%20Setup%20133.0.exe
+
+
+## Explain installer types:
+
+* win64 exe: normal Windows installer (probably you want this)
+* win64 msi: Windows installer for system administrators
+* win64 aarch64: for CPU with ARM architecture
+* EME-free: without Encrypted Media Extensions, for people who oppose services like Netflix, Spotify, ...
+* version with "b": e.g. 133.0b9 is a beta version, older than 133.0

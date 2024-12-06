@@ -11,9 +11,15 @@ but this guy helps to install SyncThing as a service (auto run on boot):
 
 https://github.com/Bill-Stewart/SyncthingWindowsSetup/releases
 
-2024-04 v1.27.5:
+If reinstalled, Windows will say `administrative installation detected`,
+need to use command line to install, example:
 
-https://github.com/Bill-Stewart/SyncthingWindowsSetup/releases/download/v1.27.5/syncthing-1.27.5-setup.exe
+```cmd
+D:
+cd D:\GoogleDrive\usual_app_Windows
+
+.\syncthing-windows-setup_v1.28.0_d202412.exe /ALLUSERS
+```
 
 ## Linux
 

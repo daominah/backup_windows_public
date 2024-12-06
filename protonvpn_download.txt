@@ -1,5 +1,7 @@
 https://protonvpn.com/download-windows
 https://github.com/ProtonVPN/win-app/releases
 
-# 2023-12-15
-https://protonvpn.com/download/ProtonVPN_v3.2.8.exe
+2024-12
+https://vpn.protondownload.com/download/ProtonVPN_v3.5.0_x64.exe
+
+On Linux Mint, ProtonVPN can installed via Flatpak.

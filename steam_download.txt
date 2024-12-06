@@ -1,0 +1,23 @@
+##### Steam
+
+Install with file `steam_latest.deb` (need to press Enter many times while installing).
+Download sources if needed:
+
+* https://cdn.fastly.steamstatic.com/client/installer/steam.deb
+* https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe
+* https://store.steampowered.com/about/
+
+After Steam is installed, copy or point Steam Storage to backed up games:
+
+* Linux: copy games to `$HOME/.local/share/Steam/steamapps/common`
+* Windows: Settings: Storage: Add Drive: probably `D:\game\SteamLibrary`
+
+Recommended settings (some may need to be set for each account):
+
+* Settings: Interface: Run Steam when my computer starts
+* Settings: Interface: Start Up Location: Library
+* Settings: Interface: disable `Notify me about ... games, new releases, ...`
+* Allow Linux to run Windows games:
+  Settings: Compatibility: Enable Steam Play for all other titles
+* Faster game start up:
+  Settings: Downloads: Allow background processing of Vulkan shaders
