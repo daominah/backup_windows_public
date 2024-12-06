@@ -61,10 +61,13 @@ So you should disable visual effects:
   Adjust for best performance (all visual effects are unchecked):
   check `Smooth edges of screen fonts`: Apply.
 * Start Menu: Themes: Color:
-  - unchecked `Transparency effects`
+  - uncheck `Transparency effects`
   - check show color on `Title bars and window borders` (default does not show border)
 
 Windows sometimes screw up the settings when updating.
+
+If you do not see image thumbnails in `Windows Explorer`, change its setting:
+File: Change folder and search options: View: uncheck `Always show icons, never thumbnails`.
 
 ### Install usual apps
 
@@ -111,7 +114,7 @@ Reference: [github.com/massgravel/Microsoft-Activation](https://github.com/massg
 * If you want to install TeamViewer for a server, you want to be able to remote
   control the server from your personal computer anytime but not vice versa,
   choose install options `Custom installation with unattended access support`,
-  `Personal use`, `Show advanced settings`. Untick `Keep me signed in option`
+  `Personal use`, `Show advanced settings`. Uncheck `Keep me signed in option`
   before login. Then set options:
   - `General`: `Start TeamViewer with Windows` (default: enable).
   - `Security`: `Grant you easy access`.
