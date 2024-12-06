@@ -1,5 +1,6 @@
 # MarkText is a MarkDown editor, available for Linux, MacOS and Windows
 https://github.com/marktext/marktext/releases
 
-# 2022-03-07
+2022-03-08 (No new releases in the last check 2024-11)
 https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-setup.exe
+https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-amd64.deb

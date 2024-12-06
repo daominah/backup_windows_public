@@ -1,0 +1,6 @@
+https://github.com/upscayl/upscayl/releases
+https://www.upscayl.org/#download
+
+2024-06 v2.11.5
+
+Linux Mint can use Flatpak to install.

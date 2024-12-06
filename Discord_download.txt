@@ -1,5 +1,7 @@
 https://discord.com/download
+
+v0.0.76 2024-11
 https://discord.com/api/download?platform=linux&format=deb
 
-# 2023-12-20
+v1.0.9028 2023-12
 https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9028/DiscordSetup.exe

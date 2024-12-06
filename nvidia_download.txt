@@ -5,5 +5,10 @@ https://www.nvidia.com/Download/index.aspx?lang=en-us
 https://www.nvidia.com/en-us/geforce/geforce-experience/download/
 # GeForce Experience can manage to download and update NVIDIA graphic driver
 
-# the newest driver may cause lag for old GTX 1060, use the following stable v512.95:
+# the newest driver may cause lag for old GTX 1060, use the following stables:
+# v512.95:
 https://www.nvidia.com/download/driverResults.aspx/189682/en-us/
+# v537.58
+https://www.nvidia.com/download/driverResults.aspx/212701/en-us/
+# v551.86
+https://www.nvidia.com/download/driverResults.aspx/223499/en-us/
