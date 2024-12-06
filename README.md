@@ -54,7 +54,9 @@ So you should disable visual effects:
 * Start Menu: View advanced system settings: Performance: Settings:
   Adjust for best performance (all visual effects are unchecked):
   check `Smooth edges of screen fonts`: Apply.
-* Start Menu: Themes: Color: unchecked `Transparency effects`
+* Start Menu: Themes: Color:
+  - unchecked `Transparency effects`
+  - check show color on `Title bars and window borders` (default does not show border)
 
 Windows sometimes screw up the settings when updating.
 
