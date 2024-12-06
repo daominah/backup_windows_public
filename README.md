@@ -11,7 +11,7 @@ do NOT put sensitive information here.
 Be aware of Google Drive does not have ".gitignore" equivalent feature and
 GitHub blocks files larger than 100 MiB (need [Git Large File Storage](git_for_windows_download.txt)).
 
-### 1. Create boot USB
+### Create boot USB
 
 Use Microsoft Windows 10 Installation Media Creation Tool:
 
@@ -21,7 +21,7 @@ Use Microsoft Windows 10 Installation Media Creation Tool:
 Do NOT choose the tool output as an `.iso` file,
 Microsoft does not provide a way to verify if the file correctly downloaded.
 
-### 2. Install and update Windows
+### Install and update Windows
 
 After installed, **set a computer name**, example `tungdtWindowsGram17z90q`, restart.
 If you do not set, the computer name is a random string, e.g. DESKTOP-9ULQBFD.
@@ -30,7 +30,34 @@ Go to `Start: Check for updates` to **update Windows** to the latest version
 (because the Windows downloaded from Installation Media Creation Tool can be very old).
 After that, you should `Advanced options: Pause updates: max 35 days`.
 
-### 3. Install usual apps
+### Optimize for performance
+
+#### Power plan
+
+* Show `Ultimate Performance` power plan with Windows PowerShell:
+
+  ```powershell
+  powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+  ```
+
+* Start Menu: Change a power plan: Ultimate Performance.
+
+#### Disable visual effects
+
+Windows crap effects significantly slow down the computer. For example:
+
+* Linux Mint runs Master Duel 3840x2160 and watches YouTube 1080p at the same time smoothly.
+* Windows 10 runs Master Duel 2560x1440 and watches YouTube 480p makes the video freeze.
+
+So you should disable visual effects:
+
+* Start Menu: View advanced system settings: Performance: Settings:
+  Adjust for best performance (all visual effects are unchecked)
+* Start Menu: Themes: Color: unchecked `Transparency effects`
+
+Windows sometimes screw up the settings when updating.
+
+### Install usual apps
 
 (If the computer will be used as a server, you should install apps as admin user)
 
@@ -40,7 +67,7 @@ installers are here, so you don't need to download them from the internet.
 Install important apps first, example: Git, Firefox, 7z, ... You can come back
 to this step later (there are a lot of apps).
 
-### 4. Pirate (optional)
+### Pirate (optional)
 
 TLDR: open `Windows PowerShell` as admin:
 
@@ -50,7 +77,7 @@ irm https://massgrave.dev/get | iex
 
 Reference: [github.com/massgravel/Microsoft-Activation](https://github.com/massgravel/Microsoft-Activation-Scripts)
 
-### 5. Enable administrator account (optional)
+### Enable administrator account (optional)
 
 * open `cmd.exe` as admin:
 
@@ -67,9 +94,9 @@ Reference: [github.com/massgravel/Microsoft-Activation](https://github.com/massg
 * Permanently disable Windows update :
   [TODO, maybe this is not possible](https://superuser.com/questions/946957/stopping-all-automatic-updates-windows-10).
 
-### 6. Remote control (optional)
+### Remote control (optional)
 
-##### 6.1. TeamViewer
+##### TeamViewer
 
 * Download the [TeamViewer installer](TeamViewer_download.txt).
 * If you want to install TeamViewer for a server, you want to be able to remote
@@ -83,12 +110,12 @@ Reference: [github.com/massgravel/Microsoft-Activation](https://github.com/massg
   - `Advanced`: `Disable TeamViewer shutdown`.
   - Log out.
 
-##### 6.2. Windows Remote desktop RDP
+##### Windows Remote desktop RDP
 
 * `Remote desktop settings`: `Enable remote desktop`.
 * `Computer management`: `Local Users and Groups`: `Groups`: `Remote Desktop Users`: `Add`.
 
-### 7. Open listening ports(optional)
+### Open listening ports (optional)
 
 * `Windows Defender Firewall`: `Advanced Settings`: `Inbound rules`: `New rule` ([reference](https://vinasupport.com/huong-dan-mo-cong-open-port-tren-windows-server/)).
 
