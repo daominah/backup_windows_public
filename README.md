@@ -76,8 +76,12 @@ File: Change folder and search options: View: uncheck `Always show icons, never 
 Check the computer directory `GoogleDrive\usual_app_Windows` to see if the
 installers are here, so you don't need to download them from the internet.
 
-Install important apps first, example: Git, Firefox, 7z, ... You can come back
-to this step later (there are a lot of apps).
+Install important apps first, example: Git, Firefox, 7z, ...
+You can come back to this step later (there are a lot of apps).
+
+[Microsoft PowerToys](https://github.com/microsoft/PowerToys) is a nice set of utilities,
+one of them is changing keyboard shortcuts.
+The settings can be restored from [powertoys_settings.ptb](powertoys_settings.ptb).
 
 ### Pirate (optional)
 
@@ -108,7 +112,15 @@ Reference: [github.com/massgravel/Microsoft-Activation](https://github.com/massg
 
 ### Remote control (optional)
 
+##### Windows Remote desktop RDP
+
+* `Remote desktop settings`: `Enable remote desktop`.
+* `Computer management`: `Local Users and Groups`: `Groups`: `Remote Desktop Users`: `Add`.
+
 ##### TeamViewer
+
+Recently, TeamViewer becomes greedy, making free sessions very short.
+Probably just setup and use the built-in Windows Remote desktop instead.
 
 * Download the [TeamViewer installer](TeamViewer_download.txt).
 * If you want to install TeamViewer for a server, you want to be able to remote
@@ -121,11 +133,6 @@ Reference: [github.com/massgravel/Microsoft-Activation](https://github.com/massg
   - `Advanced`: `Check for new version`: `Never`.
   - `Advanced`: `Disable TeamViewer shutdown`.
   - Log out.
-
-##### Windows Remote desktop RDP
-
-* `Remote desktop settings`: `Enable remote desktop`.
-* `Computer management`: `Local Users and Groups`: `Groups`: `Remote Desktop Users`: `Add`.
 
 ### Open listening ports (optional)
 

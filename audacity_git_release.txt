@@ -1,0 +1,7 @@
+https://github.com/audacity/audacity/releases
+
+
+Audacity 3.7.0 2024-10 for Windows:
+https://github.com/audacity/audacity/releases/download/Audacity-3.7.0/audacity-win-3.7.0-64bit.exe
+
+Linux can install Audacity with MintInstall.

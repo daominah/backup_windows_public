@@ -1,0 +1,18 @@
+https://github.com/daominah/insomnia/releases
+
+
+
+
+https://github.com/Kong/insomnia/releases
+
+Good version Insomnia 2023.5.8, after this, they always show login crap when start.
+https://github.com/Kong/insomnia/releases/tag/core%402023.5.8
+https://github.com/Kong/insomnia/releases/download/core%402023.5.8/Insomnia.Core-2023.5.8.deb
+https://github.com/Kong/insomnia/releases/download/core%402023.5.8/Insomnia.Core-2023.5.8.exe
+
+
+
+
+
+Alternatives:
+https://www.postman.com/downloads/
