@@ -1,5 +1,5 @@
 https://blog.windirstat.net/
 https://windirstat.net/download.html
-https://github.com/windirstat/windirstat/commits/master/
+https://github.com/windirstat/windirstat/releases
 
 # WinDirStat v1.1.2 2005-07-16
