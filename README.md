@@ -79,9 +79,17 @@ installers are here, so you don't need to download them from the internet.
 Install important apps first, example: Git, Firefox, 7z, ...
 You can come back to this step later (there are a lot of apps).
 
-[Microsoft PowerToys](https://github.com/microsoft/PowerToys) is a nice set of utilities,
-one of them is changing keyboard shortcuts.
-The settings can be restored from [powertoys_settings.ptb](powertoys_settings.ptb).
+[Microsoft PowerToys](https://github.com/microsoft/PowerToys) is a nice set of utilities:
+
+* FancyZones: if a window dragged to pre-configured zones, it will resize to fit.
+* Keyboard Manager: Remap a shortcut.
+
+The settings can be restored by:
+
+* Copy `powertoys_settings_{timestamp}.ptb` from this dir to
+  `C:\Users\tungd\OneDrive\Documents\PowerToys\Backup`.
+* Rename it to `settings_{timestamp}.ptb`.
+* Open PowerToys: General: Backup & Restore: Restore.
 
 ### Pirate (optional)
 
@@ -107,8 +115,7 @@ Reference: [github.com/massgravel/Microsoft-Activation](https://github.com/massg
 
 * Disable default `Quick Edit` in `cmd` app (to prevent accidentally freeze it).
 
-* Permanently disable Windows update :
-  [TODO, maybe this is not possible](https://superuser.com/questions/946957/stopping-all-automatic-updates-windows-10).
+* Permanently disable Windows update : Not possible, or at least, complicated.
 
 ### Remote control (optional)
 

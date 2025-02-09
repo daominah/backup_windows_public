@@ -3,3 +3,4 @@ https://windirstat.net/download.html
 https://github.com/windirstat/windirstat/releases
 
 # WinDirStat v1.1.2 2005-07-16
+# WinDirStat v2.2.2 2025-01-18
