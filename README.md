@@ -69,6 +69,13 @@ Windows sometimes screw up the settings when updating.
 If you do not see image thumbnails in `Windows Explorer`, change its setting:
 File: Change folder and search options: View: uncheck `Always show icons, never thumbnails`.
 
+#### Disable GPU scheduling
+
+Windows has a "feature" in `Graphics settings` called `Hardware-accelerated GPU scheduling`,
+which is supposed to improve performance,
+but it causes video playing in non-focus windows so lag.
+Turning it off fixes the problem.
+
 ### Install usual apps
 
 (If the computer will be used as a server, you should install apps as admin user)
