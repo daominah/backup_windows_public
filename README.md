@@ -1,4 +1,4 @@
-# Set up a Windows 10 computer
+# Set up a Windows 10 computer (this repo is PUBLIC)
 
 This GitHub repository is a clone of
 [GoogleDrive\usual_app_Windows](https://drive.google.com/drive/folders/1ArpNEL_9r1cseumE0etTTNJBLCixth8i?usp=sharing),
@@ -97,6 +97,15 @@ The settings can be restored by:
   `C:\Users\tungd\OneDrive\Documents\PowerToys\Backup`.
 * Rename it to `settings_{timestamp}.ptb`.
 * Open PowerToys: General: Backup & Restore: Restore.
+
+### Nice settings
+
+#### Start Menu
+
+* Recently opened items (files) show as icon in Start Menu:  
+  - `Settings` > `Personalization`> `Start`>
+    enable `Show recently opened items in Jump Lists on Start or the taskbar`.
+  - Pin app "Photos" to Start Menu, you should see the last opened images.
 
 ### Pirate (optional)
 
