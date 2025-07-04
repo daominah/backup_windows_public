@@ -36,7 +36,12 @@ Go to `Start: Check for updates` to **update Windows** to the latest version
 (because the Windows downloaded from Installation Media Creation Tool can be very old).
 After that, you should `Advanced options: Pause updates: max 35 days`.
 
-### Optimize for performance
+### Nice to have settings
+
+Some of the following settings make the computer run significantly faster
+(if your hardware is a little bit old).
+
+Some are just for things looking better in my opinion.
 
 #### Power plan
 
@@ -76,6 +81,13 @@ which is supposed to improve performance,
 but it causes video playing in non-focus windows so lag.
 Turning it off fixes the problem.
 
+#### Start Menu
+
+* Recently opened items (files) show as icon in Start Menu:
+  - `Settings` > `Personalization`> `Start`>
+    enable `Show recently opened items in Jump Lists on Start or the taskbar`.
+  - Pin app "Photos" to Start Menu, you should see the last opened images.
+
 ### Install usual apps
 
 (If the computer will be used as a server, you should install apps as admin user)
@@ -98,14 +110,63 @@ The settings can be restored by:
 * Rename it to `settings_{timestamp}.ptb`.
 * Open PowerToys: General: Backup & Restore: Restore.
 
-### Nice settings
+### Docker on Windows (optional, for developer)
 
-#### Start Menu
+This section is a short guide to install Docker Desktop on Windows 10 (use WSL 2 backend),
+more details can be found on [Docker official doc](https://docs.docker.com/desktop/setup/install/windows-install/).
 
-* Recently opened items (files) show as icon in Start Menu:  
-  - `Settings` > `Personalization`> `Start`>
-    enable `Show recently opened items in Jump Lists on Start or the taskbar`.
-  - Pin app "Photos" to Start Menu, you should see the last opened images.
+#### 1. Download the Docker Desktop installer
+
+[Docker Desktop installer](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe).
+The file is about 600 MiB.
+
+Ignore the requirements, just install it anyway,
+the installer will tell us if there are problems.
+
+#### 2. Install Windows Subsystem for Linux v2
+
+```powershell
+# Open Windows PowerShell as admin, then run:
+wsl --update
+
+# Wait for the installation to complete, then check result:
+wsl --version
+# Output should be like:
+# WSL version: 2.5.9.0
+```
+
+#### 3. Run the Docker Desktop installer
+
+May need to restart the computer.
+
+#### 4. Run example containers to verify the installation
+
+After the installation, check if the installation is successful with:
+
+```powershell
+docker run --name hello_world hello-world
+
+# Output: on the Docker Desktop > Containers:
+# - You should see a container run from image "hello-world".
+# - In the container logs:
+#   Hello from Docker!
+#   This message shows that your installation appears to be working correctly.
+```
+
+Try to run a container with mounted dir Desktop to it:
+
+```powershell
+# run a simple Go server https://github.com/halverneus/static-file-server to
+# serve files in the host machine Desktop directory
+# at port 8080 (-p syntax: hostPort:containerPort)
+docker run --rm -d `
+    --publish 8080:8080 `
+    -v "$env:USERPROFILE\OneDrive\Desktop:/web" `
+    --name hello_serve_mounted_dir `
+    halverneus/static-file-server
+
+# The Desktop directory is now served at http://localhost:8080
+```
 
 ### Pirate (optional)
 
