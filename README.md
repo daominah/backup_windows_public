@@ -1,6 +1,6 @@
 # Set up a Windows 10 computer (this repo is PUBLIC)
 
-This GitHub repository is a clone of
+[This GitHub repository](https://github.com/daominah/backup_windows_public) is a clone of
 [GoogleDrive\usual_app_Windows](https://drive.google.com/drive/folders/1ArpNEL_9r1cseumE0etTTNJBLCixth8i?usp=sharing),
 but only includes links to download app installers, not the installers
 (except for some installers are hard to download).
