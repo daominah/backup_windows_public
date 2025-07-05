@@ -43,16 +43,6 @@ Some of the following settings make the computer run significantly faster
 
 Some are just for things looking better in my opinion.
 
-#### Power plan
-
-* Show `Ultimate Performance` power plan with Windows PowerShell:
-
-  ```powershell
-  powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
-  ```
-
-* Start Menu: Change a power plan: Ultimate Performance.
-
 #### Disable visual effects
 
 Windows crap effects significantly slow down the computer. For example:
@@ -73,6 +63,28 @@ Windows sometimes screw up the settings when updating.
 
 If you do not see image thumbnails in `Windows Explorer`, change its setting:
 File: Change folder and search options: View: uncheck `Always show icons, never thumbnails`.
+
+#### Revert Windows 11 right-click Context Menu
+
+Windows 11 has a new right-click Context Menu that hides a lot of useful options.
+To revert it to the old Context Menu, run the following command in `cmd.exe` as admin,
+then restart the computer.
+
+```cmd
+reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
+```
+
+#### Power plan
+
+Ultimate Performance may not be shown on Windows 11. In Windows 10:
+
+* Show `Ultimate Performance` power plan with Windows PowerShell:
+
+  ```powershell
+  powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+  ```
+
+* Start Menu: Change a power plan: Ultimate Performance.
 
 #### Disable GPU scheduling
 
@@ -127,6 +139,8 @@ the installer will tell us if there are problems.
 
 ```powershell
 # Open Windows PowerShell as admin, then run:
+
+wsl --install
 wsl --update
 
 # Wait for the installation to complete, then check result:
