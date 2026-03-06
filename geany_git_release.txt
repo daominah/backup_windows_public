@@ -2,3 +2,6 @@ https://github.com/geany/geany/releases
 
 # 2023-10-19
 https://github.com/geany/geany/releases/download/2.0.0/geany-2.0_setup.exe
+
+# 2025-06
+https://download.geany.org/geany-2.1_setup.exe

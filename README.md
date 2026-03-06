@@ -3,12 +3,12 @@
 [This GitHub repository](https://github.com/daominah/backup_windows_public) is a clone of
 [GoogleDrive\usual_app_Windows](https://drive.google.com/drive/folders/1ArpNEL_9r1cseumE0etTTNJBLCixth8i?usp=sharing),
 but only includes links to download app installers, not the installers
-(except for some installers are hard to download).
+(except for some installers that are hard to download).
 
 Both this GitHub repository and the mentioned GoogleDrive directory are PUBLIC,
 do NOT put sensitive information here.
 
-Be aware of Google Drive does not have ".gitignore" equivalent feature and
+Be aware that Google Drive does not have ".gitignore" equivalent feature and
 GitHub blocks files larger than 100 MiB (need [Git Large File Storage](git_for_windows_download.txt)).
 
 Git and Google Drive do not work well together.
@@ -25,7 +25,7 @@ Use Microsoft Windows 10 Installation Media Creation Tool:
 * Download from [Microsoft](https://www.microsoft.com/en-us/software-download/windows10).
 
 Do NOT choose the tool output as an `.iso` file,
-Microsoft does not provide a way to verify if the file correctly downloaded.
+Microsoft does not provide a way to verify the download.
 
 ### Install and update Windows
 
@@ -33,32 +33,21 @@ After installed, **set a computer name**, example `tungdtWindowsGram17z90q`, res
 If you do not set, the computer name is a random string, e.g. DESKTOP-9ULQBFD.
 
 Go to `Start: Check for updates` to **update Windows** to the latest version
-(because the Windows downloaded from Installation Media Creation Tool can be very old).
+(because the Installation Media version can be very old).
 After that, you should `Advanced options: Pause updates: max 35 days`.
 
 ### Nice to have settings
 
-Some of the following settings make the computer run significantly faster
-(if your hardware is a little bit old).
+Some of these settings significantly improve performance on older hardware.
 
-Some are just for things looking better in my opinion.
-
-#### Power plan
-
-* Show `Ultimate Performance` power plan with Windows PowerShell:
-
-  ```powershell
-  powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
-  ```
-
-* Start Menu: Change a power plan: Ultimate Performance.
+Some are just personal preference.
 
 #### Disable visual effects
 
 Windows crap effects significantly slow down the computer. For example:
 
 * Linux Mint runs Master Duel 3840x2160 and watches YouTube 1080p at the same time smoothly.
-* Windows 10 runs Master Duel 2560x1440 and watches YouTube 480p makes the video freeze.
+* Windows 10 runs Master Duel 2560x1440 and watching YouTube 480p makes the video freeze.
 
 So you should disable visual effects:
 
@@ -69,16 +58,37 @@ So you should disable visual effects:
   - uncheck `Transparency effects`
   - check show color on `Title bars and window borders` (default does not show border)
 
-Windows sometimes screw up the settings when updating.
+Windows sometimes screws up the settings when updating.
 
 If you do not see image thumbnails in `Windows Explorer`, change its setting:
 File: Change folder and search options: View: uncheck `Always show icons, never thumbnails`.
+
+#### Revert Windows 11 right-click Context Menu
+
+Windows 11's right-click Context Menu hides many useful options.
+To revert to the old one, run in `cmd.exe` as admin, then restart.
+
+```cmd
+reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
+```
+
+#### Power plan
+
+Ultimate Performance may not be shown on Windows 11. In Windows 10:
+
+* Show `Ultimate Performance` power plan with Windows PowerShell:
+
+  ```powershell
+  powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+  ```
+
+* Start Menu: Change a power plan: Ultimate Performance.
 
 #### Disable GPU scheduling
 
 Windows has a "feature" in `Graphics settings` called `Hardware-accelerated GPU scheduling`,
 which is supposed to improve performance,
-but it causes video playing in non-focus windows so lag.
+but it causes video playing in non-focus windows to lag.
 Turning it off fixes the problem.
 
 #### Start Menu
@@ -88,19 +98,26 @@ Turning it off fixes the problem.
     enable `Show recently opened items in Jump Lists on Start or the taskbar`.
   - Pin app "Photos" to Start Menu, you should see the last opened images.
 
+#### Sound problem when using Bluetooth
+
+Try to disable Windows audio enhancement:
+
+`Sound output device properties`:
+`Additional device properties`:
+`Enhancements`: `Disable all enhancements`.
+
 ### Install usual apps
 
 (If the computer will be used as a server, you should install apps as admin user)
 
-Check the computer directory `GoogleDrive\usual_app_Windows` to see if the
-installers are here, so you don't need to download them from the internet.
+Check `GoogleDrive\usual_app_Windows` for existing installers before downloading.
 
 Install important apps first, example: Git, Firefox, 7z, ...
 You can come back to this step later (there are a lot of apps).
 
 [Microsoft PowerToys](https://github.com/microsoft/PowerToys) is a nice set of utilities:
 
-* FancyZones: if a window dragged to pre-configured zones, it will resize to fit.
+* FancyZones: if a window is dragged to pre-configured zones, it will resize to fit.
 * Keyboard Manager: Remap a shortcut.
 
 The settings can be restored by:
@@ -112,8 +129,7 @@ The settings can be restored by:
 
 ### Docker on Windows (optional, for developer)
 
-This section is a short guide to install Docker Desktop on Windows 10 (use WSL 2 backend),
-more details can be found on [Docker official doc](https://docs.docker.com/desktop/setup/install/windows-install/).
+Short guide to install Docker Desktop on Windows 10 (WSL 2 backend), details on [Docker official doc](https://docs.docker.com/desktop/setup/install/windows-install/).
 
 #### 1. Download the Docker Desktop installer
 
@@ -127,6 +143,8 @@ the installer will tell us if there are problems.
 
 ```powershell
 # Open Windows PowerShell as admin, then run:
+
+wsl --install
 wsl --update
 
 # Wait for the installation to complete, then check result:
@@ -141,7 +159,7 @@ May need to restart the computer.
 
 #### 4. Run example containers to verify the installation
 
-After the installation, check if the installation is successful with:
+Verify the installation:
 
 ```powershell
 docker run --name hello_world hello-world
@@ -153,7 +171,7 @@ docker run --name hello_world hello-world
 #   This message shows that your installation appears to be working correctly.
 ```
 
-Try to run a container with mounted dir Desktop to it:
+Try running a container with Desktop mounted:
 
 ```powershell
 # run a simple Go server https://github.com/halverneus/static-file-server to
@@ -192,7 +210,7 @@ Reference: [github.com/massgravel/Microsoft-Activation](https://github.com/massg
 
 * Disable default `Quick Edit` in `cmd` app (to prevent accidentally freeze it).
 
-* Permanently disable Windows update : Not possible, or at least, complicated.
+* Permanently disable Windows update: Not possible, or at least, complicated.
 
 ### Remote control (optional)
 
@@ -203,8 +221,8 @@ Reference: [github.com/massgravel/Microsoft-Activation](https://github.com/massg
 
 ##### TeamViewer
 
-Recently, TeamViewer becomes greedy, making free sessions very short.
-Probably just setup and use the built-in Windows Remote desktop instead.
+Recently, TeamViewer has become greedy, making free sessions very short.
+Probably just set up and use the built-in Windows Remote desktop instead.
 
 * Download the [TeamViewer installer](TeamViewer_download.txt).
 * If you want to install TeamViewer for a server, you want to be able to remote

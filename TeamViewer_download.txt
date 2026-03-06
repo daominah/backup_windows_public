@@ -1,3 +1,10 @@
+TeamViewer are getting greedy and annoying. Condiser open source alternative:
+
+https://github.com/rustdesk/rustdesk
+
+
+DEPRECATED:
+
 ## Windows
 
 https://www.teamviewer.com/en/download/windows/

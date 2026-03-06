@@ -1,1 +1,4 @@
 https://github.com/microsoft/PowerToys/releases
+
+# 2025-08 v0.93
+https://github.com/microsoft/PowerToys/releases/download/v0.93.0/PowerToysSetup-0.93.0-x64.exe

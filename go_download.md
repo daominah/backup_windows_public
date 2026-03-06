@@ -2,7 +2,7 @@
 
 https://go.dev/dl/
 
-https://go.dev/dl/go1.23.10.windows-amd64.msi
+https://dl.google.com/go/go1.23.12.windows-amd64.msi (released 2025-08-06)
 
 ## JetBrains GoLand
 

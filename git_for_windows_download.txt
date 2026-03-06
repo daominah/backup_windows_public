@@ -1,7 +1,7 @@
 https://git-scm.com/download/win
 
 Git v2.47.1 2024-11
-https://github.com/git-for-windows/git/releases/download/v2.47.1.windows.1/Git-2.47.1-64-bit.exe
+https://github.com/git-for-windows/git/releases/download/v2.51.0.windows.1/Git-2.51.0-64-bit.exe
 
 
 

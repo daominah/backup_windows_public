@@ -9,9 +9,9 @@ Source code:
 * https://code.videolan.org/videolan/vlc
 * https://github.com/videolan/vlc
 
-2023-11-01:
+2024-06 (no updates found as of 2025-08):
 
-https://get.videolan.org/vlc/3.0.20/win64/vlc-3.0.20-win64.exe
+https://get.videolan.org/vlc/3.0.21/win64/vlc-3.0.21-win64.exe
 
 ## How MIDI to MP3
 
@@ -40,7 +40,6 @@ Create a new `Profile`: click 🔧:
 `Audio codec` tab: choose Codec `MP3`, Bitrate 256 kb/s, Channels 2, Sample rate 48000 Hz:
 `Save` the newly created profile:
 On `Profile` line, click dropdown ▼, choose the newly created profile.
-
 
 Destination file: choose output file name, e.g. `aoe_music2.mp3`:
 `Start`.

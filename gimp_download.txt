@@ -2,5 +2,8 @@ https://www.gimp.org/downloads/
 https://gitlab.gnome.org/GNOME/gimp
 https://github.com/GNOME/gimp
 
-2024-05
+2024-05 (latest v2.x) 324MiB
 https://download.gimp.org/gimp/v2.10/windows/gimp-2.10.38-setup-1.exe
+
+2025-07 (seems slow boot, encountered error when export PNG)
+https://mirror.nju.edu.cn/gimp/gimp/v3.0/windows/gimp-3.0.4-setup.exe
