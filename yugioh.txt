@@ -1,1 +1,0 @@
-check `GoogleDrive\game\YuGiOh\ygo_my_file`

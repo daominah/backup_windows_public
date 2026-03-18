@@ -1,13 +1,17 @@
-## Go programming language
+# Go Download
 
-https://go.dev/dl/
+## Go Programming Language
 
-https://dl.google.com/go/go1.23.12.windows-amd64.msi (released 2025-08-06)
+<https://go.dev/dl/>
+
+or
+
+[install_golang.bash ](https://gist.github.com/daominah/87d7b3b2d444b4413506bf8de5d96530)
 
 ## JetBrains GoLand
 
-https://www.jetbrains.com/go/download/other.html
+<https://www.jetbrains.com/go/download/other.html>
 
-https://download.jetbrains.com/go/goland-2024.1.6.exe (debuger only support Go 1.23)
+<https://download.jetbrains.com/go/goland-2024.1.6.exe> (debugger only supports Go 1.23)
 
-More details: https://github.com/daominah/backup/blob/master/config_Jetbrains/README_jetbrains_tools.md
+More details: <https://github.com/daominah/backup/blob/master/config_Jetbrains/README_jetbrains_tools.md>

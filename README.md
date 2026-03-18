@@ -9,7 +9,7 @@ Both this GitHub repository and the mentioned GoogleDrive directory are PUBLIC,
 do NOT put sensitive information here.
 
 Be aware that Google Drive does not have ".gitignore" equivalent feature and
-GitHub blocks files larger than 100 MiB (need [Git Large File Storage](git_for_windows_download.txt)).
+GitHub blocks files larger than 100 MiB (need [Git Large File Storage](git_for_windows_download.md)).
 
 Git and Google Drive do not work well together.
 Git can have pull error, but push is fine, can ignore the error.
@@ -120,12 +120,7 @@ You can come back to this step later (there are a lot of apps).
 * FancyZones: if a window is dragged to pre-configured zones, it will resize to fit.
 * Keyboard Manager: Remap a shortcut.
 
-The settings can be restored by:
-
-* Copy `powertoys_settings_{timestamp}.ptb` from this dir to
-  `C:\Users\tungd\OneDrive\Documents\PowerToys\Backup`.
-* Rename it to `settings_{timestamp}.ptb`.
-* Open PowerToys: General: Backup & Restore: Restore.
+For settings details, see [backup PowerToys settings](https://github.com/daominah/backup/blob/master/config_more_apps/windows_powertoys_settings_backup.md).
 
 ### Docker on Windows (optional, for developer)
 
@@ -224,7 +219,8 @@ Reference: [github.com/massgravel/Microsoft-Activation](https://github.com/massg
 Recently, TeamViewer has become greedy, making free sessions very short.
 Probably just set up and use the built-in Windows Remote desktop instead.
 
-* Download the [TeamViewer installer](TeamViewer_download.txt).
+- Download the [TeamViewer installer](TeamViewer_download.md).
+
 * If you want to install TeamViewer for a server, you want to be able to remote
   control the server from your personal computer anytime but not vice versa,
   choose install options `Custom installation with unattended access support`,

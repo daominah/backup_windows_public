@@ -1,15 +1,17 @@
+# Syncthing Download
+
 ## Homepage
 
-https://github.com/syncthing/syncthing/releases
+<https://github.com/syncthing/syncthing/releases>
 
-https://github.com/syncthing/syncthing/blob/main/README-Docker.md
+<https://github.com/syncthing/syncthing/blob/main/README-Docker.md>
 
 ## Windows
 
 SyncThing provides a binary exe,
 but this guy helps to install SyncThing as a service (auto run on boot):
 
-https://github.com/Bill-Stewart/SyncthingWindowsSetup/releases
+<https://github.com/Bill-Stewart/SyncthingWindowsSetup/releases>
 
 If reinstalled, Windows will say `administrative installation detected`,
 need to use command line to install, example:

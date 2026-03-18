@@ -1,0 +1,5 @@
+# MS Office 2019 Online Setup
+
+<https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/Office/Data/setupprofessional2019retail.x64.en-us.exe>
+
+<https://github.com/massgravel/Microsoft-Activation-Scripts>

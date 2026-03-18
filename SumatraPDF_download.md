@@ -1,0 +1,8 @@
+# SumatraPDF Download
+
+<https://www.sumatrapdfreader.org/download-free-pdf-viewer>
+<https://github.com/sumatrapdfreader/sumatrapdf/releases>
+
+## v3.5.2 (2023-10-25)
+
+<https://www.sumatrapdfreader.org/dl/rel/3.5.2/SumatraPDF-3.5.2-64-install.exe>

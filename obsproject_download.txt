@@ -1,4 +1,0 @@
-https://obsproject.com/download
-
-# OBS Studio v31.1.2 2025-07
-https://cdn-fastly.obsproject.com/downloads/OBS-Studio-31.1.2-Windows-x64-Installer.exe

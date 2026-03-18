@@ -1,4 +1,6 @@
-https://support.brother.com/g/b/producttop.aspx?c=vn&lang=en&prod=hlb2100d_as
+# Brother HL-B2100D Printer
+
+<https://support.brother.com/g/b/producttop.aspx?c=vn&lang=en&prod=hlb2100d_as>
 
 Download the EasySetup.
 

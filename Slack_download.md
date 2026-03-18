@@ -1,0 +1,20 @@
+# Slack Download
+
+## Windows
+
+<https://slack.com/downloads/windows>
+<https://slack.com/release-notes/windows>
+
+### v4.36.136 (2023-12-21)
+
+<https://downloads.slack-edge.com/releases/windows/4.36.136/prod/x64/SlackSetup.exe>
+
+## Linux
+
+<https://slack.com/downloads/linux>
+<https://slack.com/downloads/instructions/linux?ddl=1&build=deb>
+<https://slack.com/release-notes/linux>
+
+### v4.41.98 (2024-11)
+
+<https://downloads.slack-edge.com/desktop-releases/linux/x64/4.41.98/slack-desktop-4.41.98-amd64.deb>

@@ -1,5 +1,0 @@
-https://www.google.com/chrome/?standalone=1&platform=win64
-
-2025-08
-Google Chrome v139.0.7258.139
-129MiB

@@ -1,0 +1,8 @@
+# Blender Download
+
+<https://www.blender.org/download/lts/3-6/>
+<https://mirror.freedif.org/blender/release/Blender3.6/blender-3.6.23-windows-x64.msi>
+
+## Master Duel Render Animations
+
+<https://github.com/UNOWEN-OwO/md_spine_tools>

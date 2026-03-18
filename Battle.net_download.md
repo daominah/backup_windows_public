@@ -1,0 +1,3 @@
+# Battle.net Download
+
+<https://download.battle.net/en-us/?platform=windows>

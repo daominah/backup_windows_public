@@ -1,0 +1,11 @@
+# MediaCreationTool for Windows
+
+## Windows 10
+
+<https://www.microsoft.com/en-us/software-download/windows10>
+<https://go.microsoft.com/fwlink/?LinkId=691209>
+
+## Windows 11
+
+<https://www.microsoft.com/software-download/windows11>
+<https://go.microsoft.com/fwlink/?linkid=2156295>
