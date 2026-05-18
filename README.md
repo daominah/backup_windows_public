@@ -186,6 +186,12 @@ docker run --rm -d `
 TLDR: open `Windows PowerShell` as admin:
 
 ```
+irm https://get.activated.win | iex
+
+# If the above is blocked (by ISP/DNS)
+iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://get.activated.win | Out-String)
+
+# Old version, may not work:
 irm https://massgrave.dev/get | iex
 ```
 
