@@ -72,6 +72,10 @@ To revert to the old one, run in `cmd.exe` as admin, then restart.
 reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
 ```
 
+#### Disable Explorer Auto Add to Quick Access
+
+`Options` > uncheck `Show frequently used folders`
+
 #### Power plan
 
 Ultimate Performance may not be shown on Windows 11. In Windows 10:
