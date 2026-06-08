@@ -275,3 +275,92 @@ Set or New String Value `ThisPCPolicy` to `Hide` in the following registry key:
 | 3D Objects | Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{31C0DD25-9439-4F12-BF41-7FF4EDA38722}\PropertyBag |
 
 Reference: <https://superuser.com/questions/1470599/hide-3d-objects-from-this-pc>
+
+### Disable ASUS bloatware services (ASUS laptops)
+
+ASUS laptops ship with many background services that run automatically on startup.
+Most are unnecessary for daily use and consume significant RAM
+(roughly 90 MB combined while idle on my machine, over half of it Armoury Crate).
+
+The table below lists services that are safe to disable,
+along with services that should be left running.
+
+#### Safe to disable
+
+| Service name                   | Display name                    | Purpose                                              | Est. RAM       |
+|--------------------------------|---------------------------------|------------------------------------------------------|----------------|
+| `GlideXNearService`            | GlideX Near Service             | Wireless screen extension to phone or tablet         | ~10 MB         |
+| `GlideXRemoteService`          | GlideX Remote Service           | Remote control component of GlideX                   | ~3 MB          |
+| `GlideXService`                | GlideX Service                  | Core GlideX service                                  | ~4 MB          |
+| `GlideXServiceExt`             | GlideX Service Extension        | GlideX extension layer                               | ~2 MB          |
+| `ASUSSoftwareManager`          | ASUS Software Manager           | Background agent that installs updates for ASUS apps | ~8 MB          |
+| `asus`                         | ASUS Update Service (asus)      | General ASUS app update checker                      | ~0 (on-demand) |
+| `asusm`                        | ASUS Update Service (asusm)     | MyASUS-specific update checker                       | ~0 (on-demand) |
+| `ArmouryCrateControlInterface` | Armoury Crate Control Interface | Interface layer for Armoury Crate hardware control   | ~7 MB          |
+| `ArmouryCrateService`          | Armoury Crate Service           | Fan profiles, RGB, and performance mode switching    | ~55 MB         |
+
+Also disable the scheduled task `ArmourySocketServer` under `Task Scheduler > ASUS`.
+
+**Trade-off when disabling Armoury Crate:** you lose fan profile switching
+(Silent / Balanced / Performance / Turbo) and custom fan curves.
+The BIOS default fan curve takes over automatically, so the laptop will not overheat.
+Windows power plans (Balanced / High Performance) still work.
+
+#### Do not disable
+
+| Service name                 | Display name                    | Purpose                                     |
+|------------------------------|---------------------------------|---------------------------------------------|
+| `ASUSOptimization`           | ASUS Optimization               | Fn keys and keyboard shortcuts              |
+| `AsusPTPService`             | AsusPTPService                  | Touchpad driver                             |
+| `LightingService`            | ASUS AURA SYNC lighting service | RGB lighting (independent of Armoury Crate) |
+| `AsusScreenXpertHostService` | ASUS ScreenXpert Host Service   | Secondary display or ScreenPad support      |
+| `AsusMsControl`              | ASUS MS Control                 | Hardware sensor access layer                |
+
+#### Disable script
+
+Run the following script in PowerShell **as Administrator**:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+$services = @(
+    "GlideXNearService",
+    "GlideXRemoteService",
+    "GlideXService",
+    "GlideXServiceExt",
+    "ASUSSoftwareManager",
+    "asus",
+    "asusm",
+    "ArmouryCrateControlInterface",
+    "ArmouryCrateService"
+)
+
+foreach ($name in $services) {
+    $svc = Get-Service -Name $name -ErrorAction SilentlyContinue
+    if ($null -eq $svc) {
+        Write-Host "  SKIP (not found): $name"
+        continue
+    }
+    try {
+        if ($svc.Status -eq "Running") {
+            Stop-Service -Name $name -Force -ErrorAction Stop
+            Write-Host "  STOPPED: $name"
+        }
+        Set-Service -Name $name -StartupType Disabled -ErrorAction Stop
+        Write-Host "  DISABLED: $name"
+    } catch {
+        Write-Host "  FAILED: $name ($($_.Exception.Message))"
+    }
+}
+
+$task = Get-ScheduledTask -TaskName "ArmourySocketServer" -TaskPath "\ASUS\" -ErrorAction SilentlyContinue
+if ($null -ne $task) {
+    Disable-ScheduledTask -TaskName "ArmourySocketServer" -TaskPath "\ASUS\" | Out-Null
+    Write-Host "  DISABLED scheduled task: ArmourySocketServer"
+} else {
+    Write-Host "  SKIP (not found) scheduled task: ArmourySocketServer"
+}
+
+Write-Host ""
+Write-Host "Done. Changes take full effect after reboot."
+```
