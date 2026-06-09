@@ -321,8 +321,6 @@ Windows power plans (Balanced / High Performance) still work.
 Run the following script in PowerShell **as Administrator**:
 
 ```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-
 $services = @(
     "GlideXNearService",
     "GlideXRemoteService",
@@ -346,8 +344,8 @@ foreach ($name in $services) {
             Stop-Service -Name $name -Force -ErrorAction Stop
             Write-Host "  STOPPED: $name"
         }
-        Set-Service -Name $name -StartupType Disabled -ErrorAction Stop
-        Write-Host "  DISABLED: $name"
+        Set-Service -Name $name -StartupType Manual -ErrorAction Stop
+        Write-Host "  SET TO MANUAL: $name"
     } catch {
         Write-Host "  FAILED: $name ($($_.Exception.Message))"
     }
