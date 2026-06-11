@@ -110,6 +110,16 @@ Try to disable Windows audio enhancement:
 `Additional device properties`:
 `Enhancements`: `Disable all enhancements`.
 
+#### Disable Snap windows bullets
+
+We already have FancyZones in PowerToys with our customized zones,
+so we should disable the annoying default Snap windows behavior.
+
+However, this setting is somehow tied to the
+`Win + Shift + Left/Right` hotkey for moving windows between monitors.
+Because of that, we must keep Snap windows enabled,
+but uncheck all the options under it.
+
 ### Install usual apps
 
 (If the computer will be used as a server, you should install apps as admin user)
@@ -219,12 +229,12 @@ Reference: [github.com/massgravel/Microsoft-Activation](https://github.com/massg
 
 ### Remote control (optional)
 
-##### Windows Remote desktop RDP
+#### Windows Remote desktop RDP
 
 * `Remote desktop settings`: `Enable remote desktop`.
 * `Computer management`: `Local Users and Groups`: `Groups`: `Remote Desktop Users`: `Add`.
 
-##### TeamViewer
+#### TeamViewer
 
 Recently, TeamViewer has become greedy, making free sessions very short.
 Probably just set up and use the built-in Windows Remote desktop instead.
