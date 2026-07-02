@@ -2,9 +2,26 @@
 
 <https://git-scm.com/download/win>
 
-## Git v2.53.0 (2026-03)
+## Git v2.55.0 (2026-06)
 
-<https://github.com/git-for-windows/git/releases/download/v2.53.0.windows.2/Git-2.53.0.2-64-bit.exe>
+Still has the [Ctrl+C exit SSH](https://unix.stackexchange.com/a/689405) bug,
+tracked upstream at
+[git-for-windows/git#3848](https://github.com/git-for-windows/git/issues/3848).
+During install, on the "Choosing the SSH executable" page,
+pick **"Use external OpenSSH"** instead of the default "Use bundled OpenSSH"
+to avoid it.
+This needs `C:\Windows\System32\OpenSSH\ssh.exe` to exist
+(**Settings > System > Optional features > View features > OpenSSH Client**).
+On my machine it was already present and working
+probably enabled by default.
+
+<https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.1/Git-2.55.0-64-bit.exe>
+
+## Git v2.34.1 (2021-11)
+
+Newer versions have problem: [Ctrl+C exit SSH](https://unix.stackexchange.com/a/689405)
+
+<https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/Git-2.34.1-64-bit.exe>
 
 ## Git LFS
 
