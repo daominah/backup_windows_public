@@ -10,3 +10,7 @@ Sources:
 How to choose a suitable FFmpeg version:
 
 <https://superuser.com/questions/1712179/which-version-of-ffmpeg-is-the-latest>
+
+TLDR:
+
+<https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n7.1-latest-win64-gpl-7.1.zip>
