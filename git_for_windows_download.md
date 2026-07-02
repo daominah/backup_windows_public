@@ -8,11 +8,10 @@ Still has the [Ctrl+C exit SSH](https://unix.stackexchange.com/a/689405) bug,
 tracked upstream at
 [git-for-windows/git#3848](https://github.com/git-for-windows/git/issues/3848).
 During install, on the "Choosing the SSH executable" page,
-pick **"Use external OpenSSH"** instead of the default "Use bundled OpenSSH"
-to avoid it.
+pick **"Use external OpenSSH"** instead of the default "Use bundled OpenSSH" to avoid it.
 This needs `C:\Windows\System32\OpenSSH\ssh.exe` to exist
-(**Settings > System > Optional features > View features > OpenSSH Client**).
-On my machine it was already present and working
+(System settings > Optional features > View features > OpenSSH Client).
+On my machine it was already present and working,
 probably enabled by default.
 
 <https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.1/Git-2.55.0-64-bit.exe>
