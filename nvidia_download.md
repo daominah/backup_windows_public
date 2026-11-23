@@ -5,6 +5,12 @@ Choose "Download Type: Studio Driver" for more stability.
 - <https://www.nvidia.com/en-us/geforce/drivers/>
 - <https://www.nvidia.com/Download/index.aspx?lang=en-us>
 
+## RTX 5070 for Asus TUF A18
+
+GeForce RTX 50 Series (Notebooks) | NVIDIA GeForce RTX 5070 Laptop GPU | Windows 11
+
+https://www.nvidia.com/en-us/drivers/details/278088/
+
 ## Tested: v580.97 (2025-09)
 
 Seems to be working well for months.
