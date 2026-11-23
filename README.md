@@ -66,11 +66,26 @@ File: Change folder and search options: View: uncheck `Always show icons, never 
 #### Revert Windows 11 right-click Context Menu
 
 Windows 11's right-click Context Menu hides many useful options.
-To revert to the old one, run in `cmd.exe` as admin, then restart.
+To revert to the old one, run in a normal `cmd.exe` (no admin needed),
+then restart Explorer.
 
 ```cmd
 reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
+reg.exe add "HKCU\Software\Classes\CLSID\{51668040-5e31-4023-bbe3-149163bd80f1}\InprocServer32" /f /ve
+taskkill /f /im explorer.exe & start explorer.exe
 ```
+
+- **The first key alone stopped working** with the November 2026 update (KB5132061),
+  which rolled out a redesigned menu: Windows still has the key but ignores it.
+  The second key is the community workaround for that update.
+- **It is unofficial**, so a later update may break it again.
+- **Fallback**: Shift+right-click (or Shift+F10) always opens the classic menu.
+- **To undo**, delete both keys, then restart Explorer:
+
+  ```cmd
+  reg.exe delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" /f
+  reg.exe delete "HKCU\Software\Classes\CLSID\{51668040-5e31-4023-bbe3-149163bd80f1}" /f
+  ```
 
 #### Disable Explorer Auto Add to Quick Access
 
